@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-nf6e
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-zwlt-tenant/test-app-igkg/devfile-sample-python-basic-nf6e@sha256:52574bf29da36d09bfc2b9fd1bd44d289cf00dd2579d378467e5664b5ddc262d
+        name: my-python
+        resources: {}
+status: {}
